@@ -18,6 +18,7 @@ if(file_exists("/files" . $url['path'])){
   include("/files" . $url['path']);
 
 }
-else{
+else {
+  header("HTTP/1.0 404 Not Found");
   include("404.html");
 }
