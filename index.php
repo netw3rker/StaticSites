@@ -14,7 +14,12 @@ if(file_exists("/files" . $url['path'])){
   $content_type = mime_content_type("/files" . $url['path']);
 
   $type_overrides = [
-    'css' => 'text/css'
+    'css' => 'text/css',
+    'js' => 'application/javascript',
+    'json' => 'application/json',
+    'xml' => 'application/xml',
+    'swf' => 'application/x-shockwave-flash',
+    'flv' => 'video/x-flv'
   ];
   if(isset($type_overrides[$ext])) {
     $content_type = $type_overrides[$ext];
