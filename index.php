@@ -26,7 +26,8 @@ if(file_exists("/files" . $url['path'])){
   }
   header("Content-Type: " . $content_type);
   // this will execute PHP that is embedded. This should be an option for users via a configuration file.
-  include("/files" . $url['path']);
+  // include("/files" . $url['path']);
+   print(file_get_contents("/files" . $url['path']));
 
 }
 else {
