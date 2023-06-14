@@ -19,7 +19,8 @@ if(file_exists("/files" . $url['path'])){
     'json' => 'application/json',
     'xml' => 'application/xml',
     'swf' => 'application/x-shockwave-flash',
-    'flv' => 'video/x-flv'
+    'flv' => 'video/x-flv',
+    'svg' => 'image/svg+xml'
   ];
   if(isset($type_overrides[$ext])) {
     $content_type = $type_overrides[$ext];
